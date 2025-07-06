@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ece9e6, #ffffff);
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    border: 2px solid #ccc;
+}
+
+input:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.id-card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.id-card img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    float: right;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4A90E2;
+    margin: 0 10px;
+}
+
+#qrCode {
+    margin-top: 20px;
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}

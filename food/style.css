@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    background: linear-gradient(135deg, #f9f1ff, #e0f7fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.tab-button.active {
+    background: #ffd3e2;
+    border-color: #ff7da6;
+    color: #d6005a;
+    font-weight: bold;
+}
+
+.menu-card {
+    display: none;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.3s ease;
+}
+
+.menu-card.active {
+    display: block;
+}
+
+.menu-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+ul li::before {
+    content: "🍽️ ";
+}
+
+.comment {
+    margin-top: 20px;
+    background: #fff5f5;
+    padding: 15px;
+    border-radius: 10px;
+    color: #c2185b;
+    font-size: 0.95em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.left img {
+    width: 50px;
+    height: 50px;
+}
+
+.left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Swiper 스타일 */
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.swiper-slide h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #5d0099;
+}
+
+.swiper-slide ul li::before {
+    content: "🍴 ";
+}
+
+.swiper-pagination {
+    margin-top: 10px;
+}

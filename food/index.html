@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이번 주 급식 뭐 나와요? 🍽️</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+  <button class="left" onclick="location.href='../main/index.html'">
+    <img src="image/left.png" alt="">
+  </button>
+
+  <h1>이번 주 급식 뭐 나와요? 🍱</h1>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab(0)">월</button>
+    <button class="tab-button" onclick="showTab(1)">화</button>
+    <button class="tab-button" onclick="showTab(2)">수</button>
+    <button class="tab-button" onclick="showTab(3)">목</button>
+    <button class="tab-button" onclick="showTab(4)">금</button>
+  </div>
+
+  <!-- 이번 주 급식 카드 -->
+  <div class="menu-card active">
+    <h2>🥗 월요일 메뉴 (6.16)</h2>
+    <ul>
+      <li>기장밥</li>
+      <li>녹두한방삼계탕</li>
+      <li>청경채겉걸이</li>
+      <li>비엔나브로콜리케찹볶음</li>
+      <li>마파두부</li>
+      <li>섞박지</li>
+      <li>짜먹는빙수</li>
+    </ul>
+    <div class="comment">이 더운날 짜먹는빙수라니.. 천국이잖아? 🍨</div>
+  </div>
+
+  <div class="menu-card">
+    <h2>🍛 화요일 메뉴 (6.17)</h2>
+    <ul>
+      <li>찹쌀밥</li>
+      <li>쌀국수/고수</li>
+      <li>공심채볶음</li>
+      <li>수제목살바베큐구이</li>
+      <li>깍두기</li>
+      <li>아이스망고바</li>
+    </ul>
+    <div class="comment">오늘은 치팅데이? 🍗</div>
+  </div>
+
+  <div class="menu-card">
+    <h2>🍝 수요일 메뉴 (6.18)</h2>
+    <ul>
+      <li>인도식카레라이스</li>
+      <li>양상추샐러드/파인애플소스</li>
+      <li>하트감자구이/케찹</li>
+      <li>수제탄두리치킨스테이크</li>
+      <li>깍두기</li>
+      <li>포도주스</li>
+    </ul>
+    <div class="comment">고기,채소,과일 완벽한 급식 👏</div>
+  </div>
+
+  <div class="menu-card">
+    <h2>🍱 목요일 메뉴 (6.19)</h2>
+    <ul>
+      <li>현미찹쌀밥</li>
+      <li>쑷갓어묵국</li>
+      <li>양배추찜/콩가루쌈장</li>
+      <li>돈육고추장볶음</li>
+      <li>배추겉절이</li>
+      <li>메이플피칸파이</li>
+    </ul>
+    <div class="comment">메이플피칸파이!! 🔥</div>
+  </div>
+
+  <div class="menu-card">
+    <h2>🍲 금요일 메뉴 (6.20)</h2>
+    <ul>
+      <li>우동장국</li>
+      <li>포테이토핫도그</li>
+      <li>깍두기</li>
+      <li>수제미숫가루</li>
+      <li>추억의도시락</li>
+    </ul>
+    <div class="comment">금요일은 추억의도시락! 한 주 마무리 행복하게 🍛✨</div>
+  </div>
+
+  <!-- 6월 급식 슬라이드 -->
+  <h2 style="margin-top:60px;">📅 다음주 급식 미리보기</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- 반복 슬라이드 -->
+      <div class="swiper-slide">
+        <h3>6월 23일 (월)</h3>
+        <ul>
+          <li>흑미밥</li>
+          <li>꿔바로우탕수육</li>
+          <li>마라탕</li>
+          <li>단무지무침</li>
+          <li>배추김치</li>
+          <li>딸기바나나우유</li>
+          <li>건빵케이크</li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <h3>6월 24일 (화)</h3>
+        <ul>
+          <li>보리밥</li>
+          <li>두부된장찌개</li>
+          <li>보쌈/두부쌈장</li>
+          <li>들기름막국수</li>
+          <li>명이나물</li>
+          <li>보쌈김치</li>
+          <li>대추방울토마토</li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <h3>6월 25일 (수)</h3>
+        <ul>
+          <li>녹두영양닭죽</li>
+          <li>군대리아버거</li>
+          <li>크링클컷감자/케찹</li>
+          <li>나박김치</li>
+          <li>오렌지주스</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="swiper-slide">
+        <h3>6월 26일 (목)</h3>
+        <ul>
+          <li>기장밥</li>
+          <li>설렁탕/소면</li>
+          <li>왕만두(고기/김치)</li>
+          <li>골뱅이채소무침</li>
+          <li>수제새우부추전</li>
+          <li>깍두기</li>
+          <li>우유(초코/딸기)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- 스크립트 -->
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const cards = document.querySelectorAll('.menu-card');
+
+    function showTab(index) {
+      tabButtons.forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+        cards[i].classList.toggle('active', i === index);
+      });
+    }
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
